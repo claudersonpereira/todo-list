@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap");
 
 *,
 html {
@@ -34,18 +34,20 @@ h1 {
   width: 100%;
   height: 40px;
   font-size: 1em;
+  padding-left: 0.5em;
 }
+
 #inputTask button {
   padding: 0rem 1.5rem;
   height: 40px;
   background-color: violet;
+  color: darkmagenta;
   font-weight: bold;
   border: 0;
   border-radius: 0.5em;
   margin-left: 1em;
   cursor: pointer;
 }
-
 
 #tasksList{
     list-style: none;
@@ -56,9 +58,12 @@ h1 {
 #tasksList li{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     align-items: center;
+    justify-content: space-between;
     height: 3em;
+    width: 100%;
+    padding: 0em 1em;
+    border-bottom: 1px solid #333;
 }
 
 #tasksList li:hover{
@@ -69,14 +74,5 @@ h1 {
 #tasksList li.checked{
     text-decoration: line-through;
     background-color: #333;
+    border-left: 0.5em solid green;
 }
-
-/* Add a "checked" mark when clicked on */
-#tasksList li.checked::before {
-    content: '';
-    background-color: green;
-    width: 1em;
-    height: 3em;  
-    margin-right: 1em;
-}
-  
