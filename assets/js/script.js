@@ -1,4 +1,12 @@
-
+var newTaskWrapper = document.getElementById("txtNewTask");
+newTaskWrapper.addEventListener('onkeypress', function(e){
+    if(e.key === "Enter"){
+        console.log("apertou enter");
+    }
+    else{
+        console.log("apertou outra coisa");
+    }
+})
 
 function addNewTask() {
     var newTaskWrapper = document.getElementById("txtNewTask");

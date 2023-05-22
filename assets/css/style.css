@@ -54,10 +54,11 @@ h1 {
 }
 
 #tasksList li{
-    padding: 1em;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 3em;
 }
 
 #tasksList li:hover{
@@ -69,3 +70,13 @@ h1 {
     text-decoration: line-through;
     background-color: #333;
 }
+
+/* Add a "checked" mark when clicked on */
+#tasksList li.checked::before {
+    content: '';
+    background-color: green;
+    width: 1em;
+    height: 3em;  
+    margin-right: 1em;
+}
+  
